@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-pZzdgsRXUfb2mqycP4BmIQ1kDtc88jFjETTAsdqysE8=' 'sha256-5cB6yJ4pegRDYD7EEdFGRT6jSaeQ454hJZ5gIyy/5eA='; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' https://hwflddeqsnicgjjszjxr.supabase.co wss://hwflddeqsnicgjjszjxr.supabase.co; frame-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>EvaluaFácil</title><meta name="theme-color" content="#1F2A44"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="EvaluaFácil"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-180.png"><style>:root{--bg:#F4F5F8;--surface:#fff;--surface-2:#F1F3F7;--line:#DDE2EA;--fg:#1B2333;--muted:#5D687A;--brand:#1F2A44;--brand-ink:#1F2A44;--brand-soft:#E8ECF4;--gold:#C8A658}
-@media (prefers-color-scheme:dark){:root{--bg:#10141C;--surface:#171D28;--surface-2:#1E2633;--line:#2B3444;--fg:#E7EBF2;--muted:#98A3B5;--brand:#C8A658;--brand-ink:#F1DFAF;--brand-soft:#2A2A22}}
+<html lang="es"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-pZzdgsRXUfb2mqycP4BmIQ1kDtc88jFjETTAsdqysE8=' 'sha256-aGpDDqo12Jnff5+5K4ob520DEIvbXwLNv8Zphzb7l8c='; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' https://hwflddeqsnicgjjszjxr.supabase.co wss://hwflddeqsnicgjjszjxr.supabase.co; frame-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>EduProfe+</title><meta name="theme-color" content="#1F2A44"><meta name="description" content="EduProfe+ by EduPsi"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="EduProfe+"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-180.png"><style>:root{--bg:#F4F5F8;--surface:#fff;--surface-2:#F1F3F7;--line:#DDE2EA;--fg:#1B2333;--muted:#5D687A;--brand:#1F2A44;--brand-ink:#1F2A44;--brand-soft:#E8ECF4;--gold:#C8A658}
+:root[data-theme=dark]{--bg:#10141C;--surface:#171D28;--surface-2:#1E2633;--line:#2B3444;--fg:#E7EBF2;--muted:#98A3B5;--brand:#C8A658;--brand-ink:#F1DFAF;--brand-soft:#2A2A22}
 *{box-sizing:border-box}html,body{margin:0;height:100%}body{background:var(--bg);color:var(--fg);font-family:'Poppins',system-ui,-apple-system,Segoe UI,sans-serif;font-size:15px;line-height:1.5;-webkit-text-size-adjust:100%}
 @font-face{font-family:'Poppins';src:url(Poppins-Regular.ttf);font-weight:400}@font-face{font-family:'Poppins';src:url(Poppins-Bold.ttf);font-weight:700}
 h1,h2{margin:0;line-height:1.25}h1{font-size:24px}.small{font-size:13px}.muted{color:var(--muted)}
@@ -15,7 +15,7 @@ h1,h2{margin:0;line-height:1.25}h1{font-size:24px}.small{font-size:13px}.muted{c
 .stack{display:flex;flex-direction:column;gap:12px}.row{display:flex;align-items:center;gap:8px}.end{justify-content:flex-end}
 .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:12px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer;text-decoration:none}
 .btn.pri{background:#1F2A44;border-color:#1F2A44;color:#fff}.btn.sm{padding:6px 12px;font-size:13px;border-radius:10px}.btn.ghost{background:transparent}.btn.danger{background:#B42318;border-color:#B42318;color:#fff}.btn:disabled{opacity:.6}
-@media (prefers-color-scheme:dark){.btn.pri{background:#C8A658;border-color:#C8A658;color:#1B2333}}
+[data-theme=dark] .btn.pri{background:#C8A658;border-color:#C8A658;color:#1B2333}
 .ico{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .form{display:flex;flex-direction:column;gap:12px}.field{display:flex;flex-direction:column;gap:4px}.field label{font-size:13px;font-weight:600}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:600px){.two{grid-template-columns:1fr}}
 .inp{width:100%;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:10px;padding:10px 12px;font:inherit;font-size:16px}
@@ -39,7 +39,7 @@ textarea.inp{font-size:15px}
 .seg2{display:flex;background:var(--surface-2);border-radius:12px;padding:4px;gap:4px;margin-bottom:14px}.seg2 button{flex:1;border:0;background:none;border-radius:9px;padding:8px;font:inherit;font-weight:600;color:var(--muted);cursor:pointer}.seg2 button.on{background:var(--surface);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.1)}
 .note.ok{background:#E8F3EA;color:#1F6B33}
 .apptabs{display:flex;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:5px;margin-bottom:16px;max-width:420px}.apptabs button{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;background:none;border-radius:10px;padding:10px 12px;font:inherit;font-weight:600;color:var(--muted);cursor:pointer}.apptabs button.on{background:var(--brand);color:#fff}.apptabs .ico{width:18px;height:18px}
-@media (prefers-color-scheme:dark){.apptabs button.on{color:#1B2333}}
+[data-theme=dark] .apptabs button.on{color:#1B2333}
 .as-chips{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 12px;scrollbar-width:none}.as-chip{border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:7px 15px;font:inherit;font-weight:600;cursor:pointer;white-space:nowrap}.as-chip.on{background:var(--brand-soft);border-color:var(--brand);color:var(--brand-ink)}
 .as-date{display:flex;align-items:center;gap:10px}.as-date .btn{font-size:20px;line-height:1;padding:8px 14px}.as-warn{color:#B54708}
 .as-sum{display:flex;flex-wrap:wrap;gap:8px}.as-sum span{background:var(--surface-2);border-radius:999px;padding:5px 12px;font-size:13px}
@@ -50,10 +50,81 @@ textarea.inp{font-size:15px}
 .as-tw{overflow-x:auto}.as-t{width:100%;border-collapse:collapse;font-size:14px}.as-t th,.as-t td{border:1px solid var(--line);padding:7px 10px;text-align:center}.as-t th{background:var(--surface-2);font-weight:600}.as-t td:first-child,.as-t th:first-child{text-align:left}
 .as-cfg{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid var(--line);border-radius:12px;padding:10px 12px}.as-cfg.on{border-color:var(--brand);background:var(--brand-soft)}
 .as-days{display:flex;gap:6px;flex-wrap:wrap}.as-day{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:12px;font-weight:600;color:var(--muted)}.as-day .inp{width:56px;padding:6px;font-size:15px;text-align:center}
+/* ===== EduProfe+ estructura ===== */
+.grow{flex:1}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#1B2333}
+.ep-mark{display:flex;align-items:center;gap:12px}.ep-mark img{width:46px;height:46px;border-radius:12px}.ep-mark b{display:block;font-size:20px;line-height:1.1;color:#1F2A44;letter-spacing:-.2px}.ep-mark b i,.ep-hero-card b i{font-style:normal;color:var(--gold)}.ep-mark span{display:block;font-size:12px;color:#5D687A;font-weight:600;letter-spacing:.3px}
+.ep{display:flex;height:100%;min-height:0;flex:1}
+.ep-side{width:264px;flex:none;background:#1F2A44;color:#DCE2EE;display:flex;flex-direction:column;padding:16px 12px 12px;padding-top:max(16px,env(safe-area-inset-top));gap:12px}
+.ep-side-logo{background:#fff;border-radius:16px;padding:14px 16px}
+.ep-nav{flex:1;overflow:auto;display:flex;flex-direction:column;gap:2px;margin:0 -4px;padding:0 4px}
+.ep-sec{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8E9BB5;margin:14px 10px 6px}
+.ep-nav button{display:flex;align-items:center;gap:12px;border:0;background:none;color:#DCE2EE;font:inherit;font-weight:500;text-align:left;padding:10px 12px;border-radius:10px;cursor:pointer}
+.ep-nav button:hover{background:rgba(255,255,255,.07)}.ep-nav button.on{background:#fff;color:#1F2A44;font-weight:700;box-shadow:inset 3px 0 0 var(--gold)}
+.ep-me{display:flex;align-items:center;gap:10px;border-top:1px solid rgba(255,255,255,.12);padding:12px 4px 0}.ep-me-t{flex:1;min-width:0}.ep-me-t b{display:block;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#fff}.ep-me-t span{display:block;font-size:12px;color:#8E9BB5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ep-av{width:38px;height:38px;border-radius:50%;background:var(--gold);color:#1B2333;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;flex:none}.ep-av.sm{width:36px;height:36px;font-size:13px}.ep-av.alt{background:var(--brand-soft);color:var(--brand-ink);font-size:12px}
+.ep-ib{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--fg);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex:none}
+.ep-side .ep-ib{background:#fff;color:#1F2A44;border:0}
+.ep-main{flex:1;min-width:0;display:flex;flex-direction:column}
+.ep-top{display:flex;align-items:center;gap:10px;padding:12px 24px;padding-top:max(12px,env(safe-area-inset-top));background:var(--surface);border-bottom:1px solid var(--line)}
+.ep-top .ep-tt{font-size:16px}.ep-tp{color:var(--muted);font-size:14px;padding-left:12px;border-left:1px solid var(--line)}
+.ep-burger{display:none}.ep-scrim{display:none}
+.content{padding:24px 24px 0}.content>*{max-width:1100px}
+.ep-ph{margin:0 0 16px}.ep-ph h1{font-size:26px}.ep-ph p{margin:4px 0 0}
+.ep-hero{display:grid;grid-template-columns:1.1fr 1fr;background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;margin-bottom:16px}
+.ep-hero-t{padding:30px 32px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}.ep-hero-t h1{font-size:32px;color:var(--brand-ink)}.ep-hero-t p{margin:0;color:var(--muted);max-width:440px}
+.ep-hero-art{position:relative;background:radial-gradient(circle at 85% 15%,rgba(200,166,88,.35),transparent 45%),linear-gradient(135deg,#1F2A44,#33466F);display:flex;align-items:center;justify-content:center;padding:26px;min-height:240px;overflow:hidden}
+.ep-hero-art::before{content:'';position:absolute;width:340px;height:340px;border-radius:50%;border:1px solid rgba(255,255,255,.12);left:-120px;bottom:-170px}
+.ep-hero-card{background:#fff;border-radius:22px;padding:18px 24px;display:flex;flex-direction:column;align-items:center;box-shadow:0 18px 40px rgba(0,0,0,.25);position:relative}.ep-hero-card img{width:88px;height:88px;border-radius:18px}.ep-hero-card b{font-size:24px;color:#1F2A44;margin-top:8px}.ep-hero-card span{font-size:13px;color:#5D687A;font-weight:600}
+.ep-hero-q{position:absolute;left:18px;bottom:14px;margin:0;background:rgba(255,255,255,.95);color:#1F2A44;font-weight:600;font-size:13px;padding:8px 14px;border-radius:999px}
+.ep-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.ep-stat{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;font:inherit;color:var(--fg);cursor:pointer;text-align:left}.ep-stat b{font-size:26px;line-height:1.2}.ep-stat>span:last-child{color:var(--muted);font-size:13px}
+.ep-si{width:36px;height:36px;border-radius:10px;background:var(--brand-soft);color:var(--brand-ink);display:inline-flex;align-items:center;justify-content:center;margin-bottom:6px}
+.ep-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}.ep-cols .card{margin:0}
+.ep-ch{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:12px}.ep-ch h2{font-size:18px}
+.ep-cl{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}.ep-cl:last-child{border-bottom:0}
+.ep-accs{display:grid;gap:10px}.ep-acc{display:flex;align-items:center;gap:12px;border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:12px 14px;font:inherit;color:var(--fg);cursor:pointer;text-align:left}.ep-acc:hover{border-color:var(--gold)}.ep-acc>span:nth-child(2){flex:1}.ep-acc b{display:block}.ep-acc span span{display:block;font-size:13px;color:var(--muted)}
+.ep-ai{width:42px;height:42px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;flex:none}.ep-ai.a1{background:#E7F6EC;color:#1D6B3C}.ep-ai.a2{background:#FFF4DE;color:#8A5A00}.ep-ai.a3{background:#E6EEFB;color:#234A98}.ep-ai.a4{background:#F1E9FB;color:#5B2E91}.ep-go{color:var(--muted)}
+.ep-foot{text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:36px;padding:22px 8px max(24px,env(safe-area-inset-bottom))}.ep-foot p{margin:6px 0}.ep-foot nav a{color:var(--muted);text-decoration:none;font-weight:500}
+.ep-foot-b{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--fg);font-size:15px}.ep-foot-b img{width:24px;height:24px;border-radius:6px}.ep-foot-b span{color:var(--gold);font-weight:600}
+/* inicio de sesión dividido */
+.lg{flex:1;display:grid;grid-template-columns:1fr 1fr;min-height:0;overflow:auto}
+.lg-l{position:relative;overflow:hidden;background:radial-gradient(circle at 90% 85%,rgba(200,166,88,.45),transparent 40%),linear-gradient(150deg,#1F2A44 0%,#2C3E66 60%,#3A4E7A 100%);color:#fff;padding:48px;display:flex;flex-direction:column;gap:28px}
+.lg-l::before{content:'';position:absolute;right:-140px;top:-140px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(255,255,255,.14);box-shadow:0 0 0 60px rgba(255,255,255,.03)}
+.lg-logo{background:#fff;border-radius:22px;padding:22px 26px;align-self:flex-start;box-shadow:0 18px 40px rgba(0,0,0,.25);position:relative}.lg-logo .ep-mark img{width:64px;height:64px;border-radius:16px}.lg-logo .ep-mark b{font-size:30px}.lg-logo .ep-mark span{font-size:14px}
+.lg-txt{margin-top:auto;position:relative}.lg-txt h1{font-size:40px;line-height:1.15}.lg-txt p{margin:14px 0 0;max-width:440px;color:#DCE2EE}
+.lg-by{margin:0;color:#C9D1E0;font-size:14px;position:relative}.lg-by span{color:var(--gold);font-weight:700}
+.lg-r{background:var(--bg);display:flex;flex-direction:column;padding:48px 48px 0}.lg-form{width:min(460px,100%);margin:0 auto;flex:1}.lg-h{font-size:28px}
+.lg-r .ep-foot{margin-top:24px}
+.note{background:#FDECEA;color:#B42318;border-radius:10px;padding:10px 12px;margin-bottom:12px;font-size:14px}
+[data-theme=dark] .ep-side{background:#0C1018;border-right:1px solid var(--line)}[data-theme=dark] .ep-hero-t h1{color:#F1DFAF}
+@media (max-width:900px){
+ .ep-side{position:fixed;inset:0 auto 0 0;z-index:60;transform:translateX(-105%);transition:transform .2s;box-shadow:0 0 40px rgba(0,0,0,.35)}.ep-side.open{transform:none}
+ .ep-scrim.open{display:block;position:fixed;inset:0;background:rgba(10,14,22,.45);z-index:55}
+ .ep-burger{display:inline-flex}.ep-top{padding:10px 14px;padding-top:max(10px,env(safe-area-inset-top))}.ep-top .ep-tt{display:none}.ep-tp{border:0;padding:0;color:var(--fg);font-weight:600}
+ .content{padding:16px 16px 0}.ep-hero{grid-template-columns:1fr}.ep-hero-t{padding:22px}.ep-hero-t h1{font-size:28px}.ep-hero-art{min-height:200px}
+ .ep-stats{grid-template-columns:1fr 1fr}.ep-cols{grid-template-columns:1fr}
+ .lg{grid-template-columns:1fr;display:flex;flex-direction:column}.lg-l{padding:24px;gap:16px;flex:none}.lg-r{flex:none}.lg-logo{padding:14px 18px}.lg-logo .ep-mark img{width:46px;height:46px}.lg-logo .ep-mark b{font-size:22px}.lg-txt h1{font-size:28px}.lg-txt p,.lg-by{display:none}.lg-r{padding:28px 20px 0}
+}
+@media (max-width:420px){.ep-top .ep-ib[data-v=dia]{display:none}}
+.ep-hero-q{top:14px;bottom:auto}
+.ep-pw{position:relative}.ep-pw .inp{padding-right:46px}.ep-eye{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:38px;height:38px;border:0;background:none;color:var(--muted);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;border-radius:8px}
+.ep-check{display:flex;align-items:center;gap:10px;font-size:14px;cursor:pointer}.ep-check input{width:18px;height:18px;accent-color:#1F2A44}
+.ep-code{font-size:22px;letter-spacing:6px;text-align:center;font-weight:700}
+.ep-idle{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom));z-index:90;display:flex;align-items:center;gap:12px;background:#1F2A44;color:#fff;padding:12px 14px 12px 18px;border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.3);max-width:calc(100% - 24px);font-size:14px}.ep-idle .btn{background:var(--gold);border-color:var(--gold);color:#1B2333}
+.ep-sh{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:18px 0 8px}
+.ep-sc{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.ep-sc h2{font-size:17px}.ep-sc p{margin:4px 0 0;max-width:560px}.ep-sc .ep-si{margin:0}.ep-sca{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ep-ok{display:inline-flex;align-items:center;gap:6px;color:#1D6B3C;background:#E7F6EC;border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600}
+.ep-steps{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.ep-qr{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.ep-qr img{width:180px;height:180px;background:#fff;border-radius:12px;padding:8px;border:1px solid var(--line)}.ep-qr code{display:block;margin-top:6px;font-size:14px;word-break:break-all;background:var(--surface-2);padding:8px 10px;border-radius:8px;color:var(--fg)}
+.ep-note{display:flex;gap:14px;align-items:flex-start;background:var(--brand-soft);border-color:transparent}.ep-note>.ico{width:24px;height:24px;color:var(--brand-ink);margin-top:2px}.ep-note p{margin:4px 0 0}
+.ep-warn{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#FFF7E6;border:1px solid #F1D9A6;color:#7A5200;border-radius:16px;padding:14px 16px;margin-bottom:16px}
+[data-theme=dark] .ep-warn{background:#2A2416;border-color:#5A4A22;color:#F1DFAF}[data-theme=dark] .ep-ok{background:#16301F;color:#8FD9A8}
+@media (max-width:900px){.ep-sc .ep-sca{width:100%}}
 </style></head><body><div id="app"></div>
 <script>window.EDUPSI_CFG={url:'https://hwflddeqsnicgjjszjxr.supabase.co',key:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh3ZmxkZGVxc25pY2dqanN6anhyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM0ODUzNTMsImV4cCI6MjEwOTA2MTM1M30.liOyXyO_w_BKvBa_R_5R6Ypy05HkiOCvogfofmttxws'};</script>
 <script src="supabase.js"></script>
-<script>// ===== EvaluaFácil · app propia de Carolina (independiente de EduPsi) =====
+<script>// ===== EduProfe+ · app propia de Carolina (independiente de EduPsi) =====
 const SB=window.supabase.createClient(window.EDUPSI_CFG.url,window.EDUPSI_CFG.key,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
 var ui={user:null,confirm:null,view:'ipec',modal:null};
 const VIEWS={},ACT={},NAV={};
@@ -86,14 +157,15 @@ function loginView(){const m=AUTH.recovery?'reset':AUTH.mode;const em=esc(localS
   <button class="btn pri wide" ${AUTH.busy?'disabled':''}>${AUTH.busy?'Creando…':'Crear mi cuenta'}</button></form>`;
  else if(m==='forgot')f=`<form data-f="forgot" class="form"><div class="field"><label for="fe">Correo</label><input id="fe" name="email" class="inp" type="email" required value="${em}"></div><button class="btn pri wide" ${AUTH.busy?'disabled':''}>Enviarme el enlace</button><button type="button" class="linkb" data-a="am" data-v="login">Volver</button></form>`;
  else f=`<form data-f="reset" class="form"><div class="field"><label for="rp">Contraseña nueva</label><input id="rp" name="pw" class="inp" type="password" autocomplete="new-password" required minlength="8"></div><div class="field"><label for="rp2">Confírmala</label><input id="rp2" name="pw2" class="inp" type="password" autocomplete="new-password" required minlength="8"></div><button class="btn pri wide">Guardar contraseña</button></form>`;
- return `<div class="login"><div class="login-card"><div class="brand"><img class="logo" src="icon-192.png" alt=""><div><b>EvaluaFácil</b><span>Diagnósticos, perfiles e informes</span></div></div>
- <h1>${m==='signup'?'Crea tu cuenta':m==='forgot'?'Recupera tu contraseña':m==='reset'?'Nueva contraseña':'Inicia sesión'}</h1><p class="muted small" style="margin:4px 0 16px">Diagnóstico, perfiles e informes semestrales.</p>
- ${AUTH.msg?`<div class="note">${esc(AUTH.msg)}</div>`:''}${AUTH.ok?`<div class="note ok">${esc(AUTH.ok)}</div>`:''}${tabs}${f}</div></div>`}
-function shellView(body){return `<header class="top"><div class="brand"><img class="logo" src="icon-192.png" alt=""><div><b>EvaluaFácil</b><span>${esc(ui.user.name||'')}</span></div></div><button class="btn sm ghost" data-a="logout" aria-label="Salir">${ic('logout')}<span class="hide-s">Salir</span></button></header><main class="content">${body}</main>`}
+ const ttl=m==='signup'?'Crea tu cuenta':m==='forgot'?'Recupera tu contraseña':m==='reset'?'Nueva contraseña':'Inicia sesión';
+ return `<div class="lg"><aside class="lg-l"><div class="lg-logo">${logoCard()}</div><div class="lg-txt"><h1>Bienvenida a<br>EduProfe+</h1><p>Tu espacio docente para pasar lista, generar diagnósticos, perfiles e informes y tener tus grupos siempre en orden.</p></div><p class="lg-by">EduProfe+ <span>by EduPsi</span> · Servicios en Educación y Psicopedagogía</p></aside>
+ <section class="lg-r"><div class="lg-form"><h2 class="lg-h">${ttl}</h2><p class="muted" style="margin:6px 0 18px">${m==='signup'?'Crea tu acceso con el correo autorizado.':'Ingresa con tu correo y contraseña.'}</p>
+ ${AUTH.msg?`<div class="note">${esc(AUTH.msg)}</div>`:''}${AUTH.ok?`<div class="note ok">${esc(AUTH.ok)}</div>`:''}${tabs}${f}</div>${footHTML()}</section></div>`}
+/* shellView: ver layout.js */
 function render(){const c=document.querySelector('.content');const keep=c?c.scrollTop:0;const ae=document.activeElement,aeId=ae&&ae.id;
  if(AUTH.loading){app.innerHTML='<div class="login"><p style="color:#fff">Cargando…</p></div>';return}
  if(!ui.user||AUTH.recovery){app.innerHTML=loginView();return}
- let body='';try{body=VIEWS.ipec()}catch(e){console.error(e);body=`<div class="card">No se pudo mostrar. ${esc(e.message)}</div>`}
+ let body='';try{body=pageView()}catch(e){console.error(e);body=`<div class="card">No se pudo mostrar. ${esc(e.message)}</div>`}
  app.innerHTML=shellView(body);const c2=document.querySelector('.content');if(c2)c2.scrollTop=keep;if(aeId){const e=document.getElementById(aeId);if(e&&/INPUT|TEXTAREA/.test(e.tagName)&&e.type!=='file')e.focus({preventScroll:true})}}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a;if(!ACT[a])return;if(b.tagName==='A')e.preventDefault();ACT[a]({...b.dataset})});
 ACT.am=d=>{AUTH.mode=d.v;AUTH.msg='';AUTH.ok='';render()};
@@ -114,7 +186,7 @@ ACT.cancelconfirm=()=>{ui.confirm=null;render()};
 ACT.logout=async()=>{await SB.auth.signOut();ui.user=null;IP.rows=null;render()};
 async function boot(){AUTH.loading=true;render();const {data:{session}}=await SB.auth.getSession();
  if(!session){AUTH.loading=false;ui.user=null;render();return}
- const u=session.user;ui.user={id:u.id,name:(u.user_metadata&&u.user_metadata.name)||u.email,role:'docente'};AUTH.loading=false;IP.rows=null;render()}
+ const u=session.user;ui.user={id:u.id,email:u.email,name:(u.user_metadata&&u.user_metadata.name)||u.email,role:'docente'};AUTH.loading=false;IP.rows=null;render()}
 
 // ===== EduPsi Campus · parte 46: abrir y descargar adjuntos del buzón también en iPhone, iPad y Android =====
 // En iPhone/iPad, abrir una ventana después de esperar la respuesta del servidor está bloqueado. Ahora el archivo se descarga dentro
@@ -239,7 +311,7 @@ VIEWS.ipec=()=>{if(!ipecOn())return '<div class="card"><p class="muted">No dispo
 ACT.ip_tab=d=>{IP.tab=d.v;render()};
 function gen54(){const gs=grupos54();const c=cfg54();const M=IPEC_MOM[IP.mom];if(IP.sel===null)IP.sel=new Set(gs.map(g=>g.key));
  const byN={};gs.forEach(g=>(byN[g.nivel]=byN[g.nivel]||[]).push(g));
- if(!gs.length)return `<div class="card p47-empty"><span class="p47-big">${ic('users')}</span><h2 style="margin:0">Primero agrega tus grupos</h2><p class="muted" style="margin:0">Pega la lista de tus estudiantes con su sección y el campus arma los grupos solo.</p><button class="btn pri" data-a="ip_tab" data-v="grp">Agregar estudiantes</button></div>`;
+ if(!gs.length)return `<div class="card p47-empty"><span class="p47-big">${ic('users')}</span><h2 style="margin:0">Primero agrega tus grupos</h2><p class="muted" style="margin:0">Pega la lista de tus estudiantes con su sección y la app arma los grupos sola.</p><button class="btn pri" data-a="ip_tab" data-v="grp">Agregar estudiantes</button></div>`;
  return `<div class="card stack"><h2 style="margin:0;font-size:17px">1. ¿Qué documento?</h2><div class="ip-moms">${Object.entries(IPEC_MOM).map(([k,m])=>`<button class="ip-mom ${IP.mom===k?'on':''}" data-a="ip_mom" data-v="${k}"><b>${m.lbl}</b><span>${k==='diag'?'Todo en «En proceso»':'Todo en '+(m.v==='L'?'L (logrado)':'EP (en proceso)')}</span></button>`).join('')}</div></div>
  <div class="card stack"><div class="row" style="justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h2 style="margin:0;font-size:17px">2. ¿Qué secciones?</h2><div class="row" style="gap:6px"><button class="btn sm ghost" data-a="ip_all" data-v="1">Todas</button><button class="btn sm ghost" data-a="ip_all" data-v="0">Ninguna</button></div></div>
   ${Object.keys(byN).sort((a,b)=>a-b).map(n=>{const h=hab54(n,M.list);return `<div class="ip-niv"><div class="row" style="justify-content:space-between;gap:8px;flex-wrap:wrap"><b>${NIV54[n]||n}</b><span class="small ${h.length?'muted':'ip-warn'}">${h.length?h.length+' habilidades':'Faltan habilidades'}${h.length?'':` · <a href="#" data-a="ip_goh" data-v="${n}">Agregar</a>`}</span></div>
@@ -391,12 +463,198 @@ document.addEventListener('change',e=>{const t=e.target;if(!t||!t.dataset)return
 document.addEventListener('input',e=>{const k=e.target&&e.target.dataset&&e.target.dataset.asname;if(!k)return;const m=ig(k,null);if(m)ipSet(k,{...m,nombre:e.target.value})});
 ACT.as_ask=d=>{ui.confirm='asd:'+d.v;render()};
 ACT.as_del=async d=>{ui.confirm=null;await ipDel(d.v);if(AS.mat===d.v)AS.mat=null;render();toast('Materia eliminada')};
-// pestañas principales de la app: Documentos y Asistencia
-const _vipec=VIEWS.ipec;var APPT={t:'doc'};
-VIEWS.ipec=function(){const top=`<nav class="apptabs"><button class="${APPT.t==='doc'?'on':''}" data-a="app_t" data-v="doc">${ic('file')}Documentos</button><button class="${APPT.t==='asis'?'on':''}" data-a="app_t" data-v="asis">${ic('check')}Asistencia</button></nav>`;
- if(APPT.t==='asis'){if(IP.rows===null){ipLoad();return top+'<div class="card"><p class="muted">Cargando…</p></div>'}return top+`<div class="p47-head"><h1 style="margin:0">Asistencia</h1><p class="muted" style="margin:4px 0 0">Pasa lista cada día de clase y descarga el control mensual en Word.</p></div>`+asisView()}
- return top+_vipec.apply(this,arguments)};
-ACT.app_t=d=>{APPT.t=d.v;ui.confirm=null;render()};
+
+// ===== EduProfe+ · estructura (menú lateral, barra superior, panel, pie) =====
+Object.assign(ICONS,{
+ grid:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+ cal:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>',
+ book:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/>',
+ menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',moon:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+ sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+ home:'<path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2h-4v-7H9v7H5a2 2 0 0 1-2-2z"/>',arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',
+ clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',spark:'<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>'});
+// tema claro / oscuro
+function theme(){try{return localStorage.getItem('ep-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){return 'light'}}
+document.documentElement.dataset.theme=theme();
+ACT.theme=()=>{const t=theme()==='dark'?'light':'dark';try{localStorage.setItem('ep-theme',t)}catch(e){}document.documentElement.dataset.theme=t;render()};
+function logoCard(){return `<div class="ep-mark"><img src="icon-192.png" alt=""><div><b>EduProfe<i>+</i></b><span>by EduPsi</span></div></div>`}
+function footHTML(){return `<footer class="ep-foot"><div class="ep-foot-b"><img src="icon-192.png" alt="">EduProfe+ <span>by EduPsi</span></div><p>© ${new Date().getFullYear()} EduProfe+ · Una herramienta de EduPsi, Servicios en Educación y Psicopedagogía · Hecho en Costa Rica</p><nav><a href="https://edupsicr.com" target="_blank" rel="noopener">edupsicr.com</a></nav></footer>`}
+const NAVL=[['Inicio'],['home','Panel general','grid'],
+ ['Asistencia'],['dia','Pasar lista','check'],['mes','Informe mensual','cal'],['mat','Mis materias','book'],
+ ['Documentos'],['gen','Generar documentos','download'],['grp','Grupos y estudiantes','users'],['hab','Habilidades','list'],['cfg','Ajustes de documentos','gear']];
+const PAGE={home:['Panel general'],dia:['Pasar lista','Marca la asistencia de cada clase. Todos inician como presentes.'],mes:['Informe mensual','Revisa los totales del mes y descarga el control de asistencia en Word.'],mat:['Mis materias','Indica qué materias das, en qué secciones y cuántas lecciones por día.'],
+ gen:['Generar documentos','Diagnóstico, perfiles e informes semestrales listos en Word, con el machote de tu centro educativo.'],grp:['Grupos y estudiantes','Tus secciones y listas. Se usan para los documentos y para la asistencia.'],hab:['Habilidades','Las habilidades de cada nivel que se colocan en los documentos.'],cfg:['Ajustes de documentos','Tus datos y recomendaciones para los documentos.']};
+ui.view='home';ui.menu=false;
+function initials(n){return String(n||'').split(/[\s@.]+/).filter(Boolean).slice(0,2).map(w=>w[0].toUpperCase()).join('')||'EP'}
+function docente(){try{return cfg54().docente||ui.user.name}catch(e){return ui.user.name}}
+function shellView(body){const p=PAGE[ui.view]||PAGE.home;const nm=docente();const dark=theme()==='dark';
+ const side=`<aside class="ep-side ${ui.menu?'open':''}" aria-label="Menú"><div class="ep-side-logo">${logoCard()}</div><nav class="ep-nav">${NAVL.map(n=>n.length===1?`<div class="ep-sec">${n[0]}</div>`:`<button class="${ui.view===n[0]?'on':''}" data-a="nav" data-v="${n[0]}">${ic(n[2])}<span>${n[1]}</span></button>`).join('')}</nav>
+  <div class="ep-me"><span class="ep-av">${esc(initials(nm))}</span><div class="ep-me-t"><b>${esc(nm)}</b><span>${esc(ui.user.email||'')}</span></div><button class="ep-ib" data-a="logout" aria-label="Salir" title="Salir">${ic('logout')}</button></div></aside>`;
+ return `<div class="ep">${side}<div class="ep-scrim ${ui.menu?'open':''}" data-a="menu"></div><div class="ep-main"><header class="ep-top"><button class="ep-ib ep-burger" data-a="menu" aria-label="Abrir menú">${ic('menu')}</button><b class="ep-tt">EduProfe+</b><span class="ep-tp">${esc(p[0])}</span><span class="grow"></span>
+  <button class="ep-ib" data-a="nav" data-v="home" aria-label="Inicio" title="Inicio">${ic('home')}</button><button class="ep-ib" data-a="nav" data-v="dia" aria-label="Pasar lista" title="Pasar lista">${ic('check')}</button><button class="ep-ib" data-a="theme" aria-label="${dark?'Modo claro':'Modo oscuro'}" title="${dark?'Modo claro':'Modo oscuro'}">${ic(dark?'sun':'moon')}</button><span class="ep-av sm" title="${esc(nm)}">${esc(initials(nm))}</span></header>
+  <main class="content">${body}${footHTML()}</main></div></div>`}
+ACT.nav=d=>{ui.view=d.v;ui.menu=false;ui.confirm=null;if(['gen','grp','hab','cfg'].includes(d.v))IP.tab=d.v;if(['dia','mes'].includes(d.v))AS.tab=d.v;if(d.v==='mat')AS.tab='cfg';render();const c=document.querySelector('.content');if(c)c.scrollTop=0};
+ACT.menu=()=>{ui.menu=!ui.menu;render()};
+// los botones internos que cambian de pestaña ahora cambian de página
+ACT.ip_tab=d=>ACT.nav({v:d.v});
+ACT.as_tab=d=>ACT.nav({v:d.v==='cfg'?'mat':d.v});
+function head(){const p=PAGE[ui.view];return p&&p[1]?`<div class="ep-ph"><h1>${esc(p[0])}</h1><p class="muted">${esc(p[1])}</p></div>`:''}
+function pageView(){if(IP.rows===null){ipLoad();return '<div class="card"><p class="muted" style="margin:0">Cargando…</p></div>'}
+ const v=ui.view;if(v==='home')return homeView();
+ if(['gen','grp','hab','cfg'].includes(v)){IP.tab=v;return head()+(v==='gen'?gen54():v==='grp'?grp54():v==='hab'?habv54():cfgv54())}
+ const ms=mats();AS.tab=v==='mat'?'cfg':v;
+ if(!ms.length&&v!=='mat')return head()+`<div class="card p47-empty"><span class="p47-big">${ic('book')}</span><h2 style="margin:0">Primero agrega tus materias</h2><p class="muted" style="margin:0">Indica qué materias das, en qué secciones y cuántas lecciones por día.</p><button class="btn pri" data-a="nav" data-v="mat">Agregar materia</button></div>`;
+ return head()+(v==='dia'?diaAS(ms):v==='mes'?mesAS(ms):cfgAS(ms))}
+function hoyClases(){const d=hoyAS();const out=[];mats().forEach(m=>Object.keys(m.secs||{}).sort((a,b)=>a.localeCompare(b,'es',{numeric:true})).forEach(sec=>{const L=lecAS(m,sec,d);if(L>0){const r=regAS(m,sec,d.slice(0,7));out.push({m,sec,L,hecho:!!r['_ok_'+d]||!!r[d]})}}));return out}
+function homeView(){const nm=docente().split(' ')[0];const h=new Date().getHours();const sal=h<12?'Buenos días':h<19?'Buenas tardes':'Buenas noches';
+ const gs=grupos54();const est=gs.reduce((a,g)=>a+g.est.length,0);const ms=mats();const hc=hoyClases();
+ const stat=(n,l,i,v)=>`<button class="ep-stat" data-a="nav" data-v="${v}"><span class="ep-si">${ic(i)}</span><b>${n}</b><span>${l}</span></button>`;
+ const acc=(v,t,s,i,c)=>`<button class="ep-acc" data-a="nav" data-v="${v}"><span class="ep-ai ${c}">${ic(i)}</span><span><b>${t}</b><span>${s}</span></span>${ic('arrow','ico ep-go')}</button>`;
+ return `<section class="ep-hero"><div class="ep-hero-t"><h1>Hola, ${esc(nm)}</h1><p>${sal}. Te damos la bienvenida a EduProfe+. Aquí tienes tus clases del día y tus herramientas para pasar lista y preparar documentos.</p><button class="btn gold" data-a="nav" data-v="dia">${ic('check')}Pasar lista de hoy</button></div>
+  <div class="ep-hero-art"><div class="ep-hero-card"><img src="icon-512.png" alt=""><b>EduProfe<i>+</i></b><span>by EduPsi</span></div><p class="ep-hero-q">Menos papeleo, más tiempo para enseñar</p></div></section>
+ <div class="ep-stats">${stat(gs.length,'Secciones','users','grp')}${stat(est,'Estudiantes','list','grp')}${stat(ms.length,'Materias','book','mat')}${stat(hc.length,'Clases hoy','clock','dia')}</div>
+ <div class="ep-cols"><div class="card"><div class="ep-ch"><h2>Hoy te toca</h2><span class="muted small">${fmtAS(hoyAS())}</span></div>
+  ${hc.length?hc.map(c=>`<div class="ep-cl"><span class="ep-av sm alt">${esc(c.sec)}</span><div class="grow"><b>${esc(c.m.nombre)}</b><div class="small muted">Sección ${esc(c.sec)} · ${c.L} lección${c.L===1?'':'es'}</div></div><button class="btn sm" data-a="as_open" data-m="${esc(c.m.key)}" data-s="${esc(c.sec)}">Pasar lista</button></div>`).join(''):`<p class="muted" style="margin:0">${ms.length?'Hoy no tienes lecciones registradas.':'Agrega tus materias y horario para ver aquí tus clases de cada día.'}</p>${ms.length?'':'<button class="btn sm" data-a="nav" data-v="mat" style="margin-top:10px">Agregar materias</button>'}`}</div>
+  <div class="card"><div class="ep-ch"><h2>Accesos rápidos</h2></div><div class="ep-accs">${acc('dia','Pasar lista','Asistencia de la clase','check','a1')}${acc('mes','Informe mensual','Control de asistencia en Word','cal','a2')}${acc('gen','Generar documentos','Diagnóstico, perfiles e informes','download','a3')}${acc('grp','Grupos y estudiantes','Listas por sección','users','a4')}</div></div></div>`}
+ACT.as_open=d=>{AS.mat=d.m;AS.sec=d.s;AS.date=hoyAS();ACT.nav({v:'dia'})};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&ui.menu){ui.menu=false;render()}});
+
+// ===== EduProfe+ · seguridad (igual que EduPsi Campus): verificación en dos pasos, Face ID / huella,
+// bloqueo por inactividad, recordar correo, respaldo, actividad y protección del navegador =====
+(function(){try{if(window.top!==window.self){document.documentElement.style.display='none';window.top.location=location.href}}catch(e){document.documentElement.style.display='none'}})();
+const LSx={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
+const SSx={get(k){try{return sessionStorage.getItem(k)}catch(e){return null}},set(k,v){try{sessionStorage.setItem(k,v)}catch(e){}},del(k){try{sessionStorage.removeItem(k)}catch(e){}}};
+var SEC={checking:false,lock:false,mfa:null,busy:false,factors:null,enroll:null,q:[],last:Date.now(),warn:false,restore:null,pw:false};
+Object.assign(ICONS,{shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
+ lock:'<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+ face:'<path d="M7 3H5a2 2 0 0 0-2 2v2M17 3h2a2 2 0 0 1 2 2v2M7 21H5a2 2 0 0 1-2-2v-2M17 21h2a2 2 0 0 0 2-2v-2"/><path d="M9 9v1.5M15 9v1.5M12 9v4h-1M9.5 16a3.5 3.5 0 0 0 5 0"/>',
+ key:'<circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.8-9.8M17 6l3 3M14.5 8.5l2 2"/>',
+ phone:'<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/>',eyeoff:'<path d="M3 3l18 18"/><path d="M10.6 5.1A10.5 10.5 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3.2 4.1M6.6 6.6A17 17 0 0 0 2 12s3.5 7 10 7a9.6 9.6 0 0 0 4.4-1"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/>'});
+function devStr(){const a=navigator.userAgent;const os=/iPhone/.test(a)?'iPhone':/iPad/.test(a)?'iPad':/Android/.test(a)?'Android':/Mac/.test(a)?'Mac':/Windows/.test(a)?'Windows':'Otro equipo';
+ const br=/Edg\//.test(a)?'Edge':/CriOS|Chrome\//.test(a)?'Chrome':/FxiOS|Firefox/.test(a)?'Firefox':/Safari/.test(a)?'Safari':'Navegador';return `${br} en ${os}`}
+// ---------- actividad (se guarda en tu cuenta) ----------
+function logEv(e){const it={t:new Date().toISOString(),e,d:devStr()};if(!IP.rows||!ui.user){SEC.q.push(it);return}const l=[it,...(ig('log',[])||[])].slice(0,80);ipSet('log',l,true)}
+function flushLog(){if(SEC.q.length&&IP.rows&&ui.user){const q=SEC.q.splice(0);const l=[...q.reverse(),...(ig('log',[])||[])].slice(0,80);ipSet('log',l,true)}}
+// ---------- Face ID / huella (WebAuthn con el lector del propio equipo; nada sale del dispositivo) ----------
+function b64u(buf){return btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
+function unb64u(s){s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';return Uint8Array.from(atob(s),c=>c.charCodeAt(0))}
+function bioData(){try{return JSON.parse(LSx.get('ep-bio')||'null')}catch(e){return null}}
+function bioOn(uid){const b=bioData();return !!(b&&b.cred&&(!uid||b.uid===uid))}
+function bioName(){const a=navigator.userAgent;return /iPhone|iPad|Mac/.test(a)?'Face ID o Touch ID':/Android/.test(a)?'huella o rostro':/Windows/.test(a)?'Windows Hello':'huella o rostro'}
+var BIO_OK=null;(async()=>{try{BIO_OK=!!(window.PublicKeyCredential&&await PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable())}catch(e){BIO_OK=false}})();
+ACT.bioenable=async()=>{const u=ui.user;try{const cred=await navigator.credentials.create({publicKey:{challenge:crypto.getRandomValues(new Uint8Array(32)),rp:{name:'EduProfe+',id:location.hostname},
+  user:{id:new TextEncoder().encode(u.id).slice(0,64),name:u.email||u.name,displayName:u.name},pubKeyCredParams:[{type:'public-key',alg:-7},{type:'public-key',alg:-257}],
+  authenticatorSelection:{authenticatorAttachment:'platform',userVerification:'required',residentKey:'preferred'},timeout:60000,attestation:'none'}});
+  if(!cred){toast('No se pudo activar');return}LSx.set('ep-bio',JSON.stringify({uid:u.id,cred:b64u(cred.rawId),name:docente(),email:u.email||''}));LSx.set('ep-keep','1');SSx.set('ep-unlocked',u.id);
+  logEv(`Activó el ingreso con ${bioName()}`);toast(`Listo: la próxima vez entra con ${bioName()}`);render()}
+ catch(e){toast(e&&e.name==='NotAllowedError'?'Se canceló la activación':'Este dispositivo no permitió activarlo')}};
+ACT.biodisable=()=>{LSx.del('ep-bio');logEv('Desactivó el ingreso con biometría');toast('Desactivado en este dispositivo');render()};
+async function bioVerify(){const b=bioData();if(!b)return false;try{return !!await navigator.credentials.get({publicKey:{challenge:crypto.getRandomValues(new Uint8Array(32)),rpId:location.hostname,allowCredentials:[{type:'public-key',id:unb64u(b.cred)}],userVerification:'required',timeout:60000}})}catch(e){return false}}
+ACT.biounlock=async()=>{if(await bioVerify()){SEC.lock=false;SEC.last=Date.now();SSx.set('ep-unlocked',ui.user.id);logEv(`Entró con ${bioName()}`);render()}else toast('No se pudo verificar. Intenta de nuevo o entra con tu contraseña')};
+ACT.lock=()=>{SSx.del('ep-unlocked');SEC.lock=true;render()};
+// ---------- pantallas de bloqueo y de código ----------
+function gateShell(inner){return `<div class="lg"><aside class="lg-l"><div class="lg-logo">${logoCard()}</div><div class="lg-txt"><h1>Tu información,<br>protegida</h1><p>EduProfe+ usa las mismas protecciones de EduPsi Campus: verificación en dos pasos, desbloqueo con biometría y cierre por inactividad.</p></div><p class="lg-by">EduProfe+ <span>by EduPsi</span> · Servicios en Educación y Psicopedagogía</p></aside><section class="lg-r"><div class="lg-form">${inner}</div>${footHTML()}</section></div>`}
+function lockScreen(){const nm=bioName();return gateShell(`<div class="stack" style="align-items:center;text-align:center;gap:18px;padding-top:30px"><span class="ep-av" style="width:72px;height:72px;font-size:24px">${esc(initials(docente()))}</span><div><h2 class="lg-h">Hola, ${esc(docente().split(' ')[0])}</h2><p class="muted" style="margin-top:6px">Tu sesión está protegida. Desbloquéala con ${nm}.</p></div>
+ <button class="btn pri" style="justify-content:center;min-width:260px;padding:14px 18px;font-size:16px" data-a="biounlock">${ic('face')}Entrar con ${nm}</button><button class="btn ghost sm" data-a="logoutfull">Entrar con correo y contraseña</button></div>`)}
+function mfaScreen(){return gateShell(`<h2 class="lg-h">Verificación en dos pasos</h2><p class="muted" style="margin:6px 0 18px">Escribe el código de 6 dígitos que muestra tu aplicación de autenticación (Google Authenticator, Microsoft Authenticator u otra).</p>
+ ${AUTH.msg?`<div class="note">${esc(AUTH.msg)}</div>`:''}<form data-f="mfa" class="form"><div class="field"><label for="mc">Código</label><input id="mc" name="code" class="inp ep-code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required autofocus></div>
+ <button class="btn pri wide" ${SEC.busy?'disabled':''}>${SEC.busy?'Verificando…':'Verificar'}</button><button type="button" class="linkb" data-a="logoutfull">Usar otra cuenta</button></form>`)}
+// ---------- render: primero los candados ----------
+const _renderS=render;render=function(){if(SEC.checking&&ui.user){app.innerHTML='<div class="lg"><section class="lg-r" style="justify-content:center;align-items:center"><p class="muted">Verificando tu sesión…</p></section></div>';return}
+ if(ui.user&&!AUTH.recovery&&SEC.mfa){app.innerHTML=mfaScreen();const c=document.getElementById('mc');if(c&&!c.value)c.focus();return}
+ if(ui.user&&!AUTH.recovery&&SEC.lock){app.innerHTML=lockScreen();return}
+ _renderS();idleBar()};
+// ---------- al abrir la app ----------
+const _bootS=boot;boot=async function(){SEC.checking=true;SEC.mfa=null;SEC.lock=false;try{await _bootS()}finally{SEC.checking=false}
+ if(!ui.user){render();return}
+ if(LSx.get('ep-keep')==='0'&&!SSx.get('ep-live')){await SB.auth.signOut({scope:'local'});ui.user=null;render();return}
+ if(LSx.get('ep-keep')==='0')LSx.del('ipec-email');
+ try{const {data}=await SB.auth.mfa.getAuthenticatorAssuranceLevel();if(data&&data.nextLevel==='aal2'&&data.currentLevel!=='aal2'){const f=await SB.auth.mfa.listFactors();const t=((f.data&&f.data.totp)||[]).find(x=>x.status==='verified');if(t){SEC.mfa={fid:t.id};AUTH.msg='';render();return}}}catch(e){}
+ afterGate()};
+function afterGate(){const just=SSx.get('ep-unlocked')==='__pending';if(just){SSx.set('ep-unlocked',ui.user.id);logEv('Inició sesión con correo y contraseña')}
+ if(bioOn(ui.user.id)&&SSx.get('ep-unlocked')!==ui.user.id)SEC.lock=true;SEC.last=Date.now();IP.rows=null;render()}
+document.addEventListener('submit',async e=>{const f=e.target.closest('form[data-f]');if(!f)return;const k=f.dataset.f;
+ if(k==='login'){const fd=new FormData(f);const keep=!!fd.get('keep');LSx.set('ep-keep',keep?'1':'0');SSx.set('ep-live','1');SSx.set('ep-unlocked','__pending');
+  const b=bioData();if(b&&b.email&&b.email.toLowerCase()!==String(fd.get('email')||'').trim().toLowerCase())LSx.del('ep-bio');return}
+ if(k!=='mfa')return;e.preventDefault();const code=String(new FormData(f).get('code')||'').replace(/\D/g,'');if(code.length!==6){AUTH.msg='El código tiene 6 dígitos.';render();return}
+ SEC.busy=true;AUTH.msg='';render();try{const {error}=await SB.auth.mfa.challengeAndVerify({factorId:SEC.mfa.fid,code});if(error){AUTH.msg='Código incorrecto o vencido. Revisa la hora del teléfono e intenta de nuevo.';return}
+  SEC.mfa=null;SEC.busy=false;logEv('Verificó el código de dos pasos');afterGate();return}finally{SEC.busy=false;render()}},true);
+// ---------- salir ----------
+ACT.logoutfull=async()=>{SEC.lock=false;SEC.mfa=null;SSx.del('ep-unlocked');await SB.auth.signOut({scope:'local'});ui.user=null;IP.rows=null;AUTH.mode='login';AUTH.msg='';render()};
+ACT.logout=async()=>{if(Object.keys(IPSAVE||{}).length)await new Promise(r=>setTimeout(r,1500));logEv('Cerró sesión');await new Promise(r=>setTimeout(r,600));return ACT.logoutfull()};
+// ---------- inactividad: a los 15 min se bloquea (con biometría) o se cierra la sesión ----------
+const IDLE_MS=15*60*1000,WARN_MS=14*60*1000;
+['pointerdown','keydown','touchstart','scroll','wheel'].forEach(ev=>document.addEventListener(ev,()=>{SEC.last=Date.now();if(SEC.warn){SEC.warn=false;idleBar()}},{passive:true,capture:true}));
+function idleBar(){const el=document.getElementById('ep-idle');if(!SEC.warn){if(el)el.remove();return}if(el)return;const d=document.createElement('div');d.id='ep-idle';d.className='ep-idle';d.setAttribute('role','alert');
+ d.innerHTML=`${ic('lock')}<span>Por seguridad, la sesión se ${bioOn(ui.user&&ui.user.id)?'bloqueará':'cerrará'} en 1 minuto por inactividad.</span><button class="btn sm" data-a="stay">Seguir aquí</button>`;document.body.appendChild(d)}
+ACT.stay=()=>{SEC.last=Date.now();SEC.warn=false;idleBar()};
+setInterval(()=>{if(!ui.user||SEC.lock||SEC.mfa||SEC.checking){SEC.last=Date.now();return}const t=Date.now()-SEC.last;
+ if(t>IDLE_MS){SEC.warn=false;if(bioOn(ui.user.id)){SSx.del('ep-unlocked');SEC.lock=true;logEv('Sesión bloqueada por inactividad');render()}else{logEv('Sesión cerrada por inactividad');setTimeout(()=>ACT.logoutfull(),800)}}
+ else if(t>WARN_MS&&!SEC.warn){SEC.warn=true;idleBar()}},10000);
+// ---------- formulario de entrada: ver contraseña y recordar correo ----------
+document.addEventListener('click',e=>{const b=e.target.closest('[data-eye]');if(!b)return;const i=document.getElementById(b.dataset.eye);if(!i)return;const show=i.type==='password';i.type=show?'text':'password';b.innerHTML=ic(show?'eyeoff':'eye');b.setAttribute('aria-label',show?'Ocultar contraseña':'Mostrar contraseña')});
+const _lvS=loginView;loginView=function(){let h=_lvS();
+ h=h.replace(/(<input id="(lp|sp|sp2|rp|rp2)"[^>]*>)/g,'<div class="ep-pw">$1<button type="button" class="ep-eye" data-eye="$2" aria-label="Mostrar contraseña">'+ic('eye')+'</button></div>');
+ const keep=LSx.get('ep-keep')!=='0';
+ h=h.replace(/(<button class="btn pri wide"[^>]*>(?:Entrando…|Entrar)<\/button>)/,`<label class="ep-check"><input type="checkbox" name="keep" ${keep?'checked':''}> Recordar mi correo en este dispositivo</label><p class="small muted" style="margin:-4px 0 0">Por seguridad, la sesión se bloquea tras 15 minutos sin uso. Puedes activar Face ID o huella en Seguridad.</p>$1`);
+ return h};
+// ---------- respaldo ----------
+function bkKey(){return 'ep-bk-'+(ui.user&&ui.user.id)}
+function bkDays(){const d=LSx.get(bkKey());return d?Math.floor((Date.now()-new Date(d).getTime())/864e5):null}
+ACT.backup=()=>{const p=ui.user.id+':';const rows={};Object.entries(IP.rows||{}).forEach(([k,v])=>{if(k.startsWith(p)&&!k.startsWith(p+'log'))rows[k.slice(p.length)]=v});
+ const data={app:'EduProfe+',v:1,fecha:new Date().toISOString(),cuenta:ui.user.email,rows};const blob=new Blob([JSON.stringify(data,null,1)],{type:'application/json'});
+ const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`Respaldo EduProfe+ ${hoyAS()}.json`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);
+ LSx.set(bkKey(),new Date().toISOString());logEv('Descargó un respaldo');toast('Respaldo descargado. Guárdalo en un lugar seguro');render()};
+document.addEventListener('change',async e=>{if(!e.target||e.target.id!=='ep-rest')return;const f=e.target.files&&e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d||d.app!=='EduProfe+'||!d.rows)throw 0;SEC.restore=d;render()}catch(x){toast('Ese archivo no es un respaldo de EduProfe+')}});
+ACT.restore_ok=async()=>{const d=SEC.restore;if(!d)return;SEC.restore=null;let n=0;for(const [k,v] of Object.entries(d.rows)){if(k==='log')continue;ipSet(k,v,true);n++}logEv(`Restauró un respaldo (${n} registros)`);toast('Respaldo restaurado');render()};
+ACT.restore_no=()=>{SEC.restore=null;render()};
+// ---------- verificación en dos pasos (aplicación de autenticación) ----------
+async function loadFactors(){await null;try{const {data}=await SB.auth.mfa.listFactors();SEC.factors=(data&&data.all||[]).filter(f=>f.factor_type==='totp')}catch(e){SEC.factors=[]}render()}
+ACT.mfa_start=async()=>{try{for(const f of (SEC.factors||[]).filter(f=>f.status!=='verified'))await SB.auth.mfa.unenroll({factorId:f.id});
+ const {data,error}=await SB.auth.mfa.enroll({factorType:'totp',friendlyName:'EduProfe+ '+Date.now().toString(36)});if(error)throw error;SEC.enroll={id:data.id,qr:data.totp.qr_code,secret:data.totp.secret};render()}
+ catch(e){toast(e.message||'No se pudo iniciar la activación')}};
+ACT.mfa_cancel=async()=>{const id=SEC.enroll&&SEC.enroll.id;SEC.enroll=null;if(id)try{await SB.auth.mfa.unenroll({factorId:id})}catch(e){}loadFactors()};
+document.addEventListener('submit',async e=>{const f=e.target.closest('form[data-f="mfa_on"]');if(!f)return;e.preventDefault();const code=String(new FormData(f).get('code')||'').replace(/\D/g,'');
+ try{const {error}=await SB.auth.mfa.challengeAndVerify({factorId:SEC.enroll.id,code});if(error){toast('Código incorrecto. Intenta con el código nuevo de la aplicación');return}
+  SEC.enroll=null;logEv('Activó la verificación en dos pasos');toast('Verificación en dos pasos activada');loadFactors()}catch(x){toast('No se pudo verificar')}});
+ACT.mfa_off=async d=>{if(ui.confirm!=='mfaoff'){ui.confirm='mfaoff';render();return}ui.confirm=null;try{const {error}=await SB.auth.mfa.unenroll({factorId:d.v});if(error)throw error;logEv('Desactivó la verificación en dos pasos');toast('Verificación en dos pasos desactivada');loadFactors()}catch(e){toast('Para desactivarla, sal y vuelve a entrar con tu código y luego inténtalo de nuevo')}};
+// ---------- contraseña y sesiones ----------
+document.addEventListener('submit',async e=>{const f=e.target.closest('form[data-f="pwchg"]');if(!f)return;e.preventDefault();const fd=new FormData(f);const p=String(fd.get('pw')||''),p2=String(fd.get('pw2')||'');
+ if(p!==p2){toast('Las contraseñas no coinciden');return}if(!pwOk(p)){toast('Usa 8 caracteres o más con minúscula, mayúscula y número');return}
+ const {error}=await SB.auth.updateUser({password:p});if(error){toast(/reauth|recent/i.test(error.message)?'Por seguridad, sal y vuelve a entrar antes de cambiarla':error.message);return}SEC.pw=false;logEv('Cambió su contraseña');toast('Contraseña actualizada');render()});
+ACT.pw_toggle=()=>{SEC.pw=!SEC.pw;render()};
+ACT.signout_all=async()=>{if(ui.confirm!=='sall'){ui.confirm='sall';render();return}ui.confirm=null;logEv('Cerró la sesión en todos los dispositivos');await new Promise(r=>setTimeout(r,800));try{await SB.auth.signOut({scope:'global'})}catch(e){}SSx.del('ep-unlocked');ui.user=null;IP.rows=null;render()};
+// ---------- páginas ----------
+NAVL.push(['Cuenta'],['seg','Seguridad y respaldo','shield'],['act','Actividad','clock']);
+PAGE.seg=['Seguridad y respaldo','Protege tu cuenta y guarda una copia de tu información.'];PAGE.act=['Actividad','Los ingresos y cambios importantes de tu cuenta.'];
+function secView(){if(SEC.factors===null){loadFactors();return head()+'<div class="card"><p class="muted" style="margin:0">Cargando…</p></div>'}
+ const v=(SEC.factors||[]).find(f=>f.status==='verified');const on=bioOn(ui.user.id),nm=bioName();const dd=bkDays();
+ const card=(i,t,s,act)=>`<div class="card ep-sc"><span class="ep-si">${ic(i)}</span><div class="grow"><h2>${t}</h2><p class="small muted">${s}</p></div><div class="ep-sca">${act}</div></div>`;
+ let mfa;
+ if(SEC.enroll)mfa=`<div class="card stack"><div class="row" style="gap:12px"><span class="ep-si">${ic('phone')}</span><h2 style="font-size:17px">Activar la verificación en dos pasos</h2></div>
+  <ol class="ep-steps"><li>Instala en tu teléfono una aplicación de autenticación, por ejemplo <b>Google Authenticator</b> o <b>Microsoft Authenticator</b>.</li><li>En la aplicación toca <b>+</b> y escanea este código.</li><li>Escribe aquí el código de 6 dígitos que aparece.</li></ol>
+  <div class="ep-qr"><img src="${esc(SEC.enroll.qr)}" alt="Código QR para la aplicación de autenticación"><div class="small muted">¿No puedes escanear? Escribe esta clave en la aplicación:<code>${esc(SEC.enroll.secret)}</code></div></div>
+  <form data-f="mfa_on" class="row" style="gap:8px;flex-wrap:wrap"><input name="code" class="inp ep-code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required placeholder="000000" style="max-width:180px"><button class="btn pri">${ic('check')}Activar</button><button type="button" class="btn ghost" data-a="mfa_cancel">Cancelar</button></form></div>`;
+ else mfa=card('phone','Verificación en dos pasos',v?'Activada. Al entrar en un dispositivo nuevo te pediremos el código de tu aplicación de autenticación.':'Además de tu contraseña, te pediremos un código de 6 dígitos de una aplicación en tu teléfono. Es la protección más importante.',
+  v?(ui.confirm==='mfaoff'?`<span class="small">¿Desactivarla?</span><button class="btn sm danger" data-a="mfa_off" data-v="${v.id}">Sí</button><button class="btn sm" data-a="cancelconfirm">No</button>`:`<span class="ep-ok">${ic('check')}Activa</span><button class="btn sm ghost" data-a="mfa_off" data-v="${v.id}">Desactivar</button>`):`<button class="btn pri" data-a="mfa_start">${ic('shield')}Activar</button>`);
+ const bio=card('face',`Entrar con ${nm}`,on?`Activado en este dispositivo. Al abrir EduProfe+ o tras 15 minutos sin uso, se desbloquea con ${nm}.`:BIO_OK===false?'Este dispositivo o navegador no tiene lector de huella o rostro disponible.':'Entra más rápido y seguro en este dispositivo. Se activa una vez en cada teléfono o computadora. Tu huella o rostro nunca salen del dispositivo.',
+  on?`<span class="ep-ok">${ic('check')}Activo</span><button class="btn sm ghost" data-a="biodisable">Desactivar</button>`:BIO_OK===false?'':`<button class="btn pri" data-a="bioenable">${ic('lock')}Activar</button>`);
+ const pw=SEC.pw?`<div class="card stack"><div class="row" style="gap:12px"><span class="ep-si">${ic('key')}</span><h2 style="font-size:17px">Cambiar contraseña</h2></div><form data-f="pwchg" class="form" style="max-width:420px"><div class="field"><label for="np">Contraseña nueva</label><div class="ep-pw"><input id="np" name="pw" type="password" class="inp" autocomplete="new-password" required minlength="8"><button type="button" class="ep-eye" data-eye="np" aria-label="Mostrar contraseña">${ic('eye')}</button></div></div><div class="field"><label for="np2">Confírmala</label><input id="np2" name="pw2" type="password" class="inp" autocomplete="new-password" required minlength="8"><span class="small muted">Mínimo 8 caracteres con minúscula, mayúscula y número.</span></div><div class="row"><button class="btn pri">Guardar</button><button type="button" class="btn ghost" data-a="pw_toggle">Cancelar</button></div></form></div>`
+  :card('key','Contraseña','Cámbiala si crees que alguien más la conoce. Usa una que no uses en otros sitios.',`<button class="btn" data-a="pw_toggle">Cambiar</button>`);
+ const ses=card('logout','Sesiones abiertas','Si usaste EduProfe+ en un equipo prestado o perdiste un teléfono, cierra la sesión en todos los dispositivos.',ui.confirm==='sall'?`<span class="small">¿Cerrar en todos?</span><button class="btn sm danger" data-a="signout_all">Sí</button><button class="btn sm" data-a="cancelconfirm">No</button>`:`<button class="btn" data-a="signout_all">Cerrar en todos</button>`);
+ const bk=SEC.restore?`<div class="card stack"><h2 style="font-size:17px">¿Restaurar este respaldo?</h2><p class="small muted" style="margin:0">Respaldo del ${esc(new Date(SEC.restore.fecha).toLocaleString('es-CR'))} con ${Object.keys(SEC.restore.rows).length} registros. Los grupos, materias y asistencias que tenga se van a reemplazar por los del respaldo.</p><div class="row"><button class="btn pri" data-a="restore_ok">Sí, restaurar</button><button class="btn ghost" data-a="restore_no">Cancelar</button></div></div>`
+  :card('download','Respaldo de tu información',`Descarga una copia de tus grupos, habilidades, materias y asistencias. ${dd===null?'Todavía no has descargado ninguno en este dispositivo.':dd===0?'Último respaldo: hoy.':`Último respaldo: hace ${dd} día${dd===1?'':'s'}.`} Te recomendamos hacerlo cada semana.`,`<button class="btn pri" data-a="backup">${ic('download')}Descargar</button><label class="btn ghost">${ic('upload')}Restaurar<input type="file" id="ep-rest" accept="application/json,.json" hidden></label>`);
+ return head()+`<div class="ep-sh">Acceso</div>${mfa}${bio}${pw}${ses}<div class="ep-sh">Tu información</div>${bk}
+ <div class="card ep-note">${ic('shield')}<div><b>Así se protege EduProfe+</b><p class="small muted">Tu información viaja cifrada y se guarda en una base de datos privada: solo tu cuenta puede leerla. La página no se puede mostrar dentro de otros sitios, la sesión se bloquea tras 15 minutos sin uso y queda un registro de los ingresos en Actividad.</p></div></div>`}
+function actView(){const l=ig('log',[])||[];return head()+`<div class="card">${l.length?l.map(x=>{const d=new Date(x.t);return `<div class="ep-cl"><span class="ep-si" style="margin:0">${ic(/sesi|Entr|Verific/.test(x.e)?'lock':/respaldo/i.test(x.e)?'download':/Gener|Descarg/.test(x.e)?'file':'shield')}</span><div class="grow"><b style="font-weight:600">${esc(x.e)}</b><div class="small muted">${esc(x.d||'')}</div></div><span class="small muted" style="text-align:right">${d.toLocaleDateString('es-CR',{day:'numeric',month:'short'})}<br>${d.toLocaleTimeString('es-CR',{hour:'2-digit',minute:'2-digit'})}</span></div>`}).join(''):'<p class="muted" style="margin:0">Aún no hay actividad registrada.</p>'}</div>`}
+const _pvS=pageView;pageView=function(){if(IP.rows)flushLog();if(ui.view==='seg'&&IP.rows)return secView();if(ui.view==='act'&&IP.rows)return actView();
+ const b=_pvS();if(ui.view==='home'&&IP.rows){const dd=bkDays();if(dd===null||dd>=7)return `<div class="ep-warn">${ic('shield')}<div class="grow">${dd===null?'Todavía no has descargado un respaldo de tu información.':`Tu último respaldo fue hace ${dd} días.`} Te recomendamos hacerlo cada semana.</div><button class="btn sm gold" data-a="backup">${ic('download')}Descargar ahora</button></div>`+b}return b};
+const _navS=ACT.nav;ACT.nav=d=>{if(d.v==='seg')SEC.factors=null;_navS(d)};
+// registrar documentos y controles descargados
+const _genS=ACT.ip_gen;ACT.ip_gen=async(...a)=>{const r=await _genS(...a);try{logEv('Generó documentos: '+IPEC_MOM[IP.mom].lbl)}catch(e){}return r};
+const _dlS=dlAS;dlAS=async list=>{const r=await _dlS(list);try{logEv('Descargó el control de asistencia de '+MESES_AS[+AS.month.split('-')[1]-1].toLowerCase())}catch(e){}return r};
+// botón de bloqueo en la barra superior cuando hay biometría
+const _shS=shellView;shellView=function(b){let h=_shS(b);if(bioOn(ui.user.id))h=h.replace('<button class="ep-ib" data-a="theme"','<button class="ep-ib" data-a="lock" aria-label="Bloquear" title="Bloquear">'+ic('lock')+'</button><button class="ep-ib" data-a="theme"');return h};
 
 ipecOn=function(){return !!ui.user};
 boot();
