@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-pZzdgsRXUfb2mqycP4BmIQ1kDtc88jFjETTAsdqysE8=' 'sha256-9r3gOK5q5UqTz13bAK0lhTcX5U2sWBGw8tx+HG31scc='; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' https://hwflddeqsnicgjjszjxr.supabase.co wss://hwflddeqsnicgjjszjxr.supabase.co; frame-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>EduProfe+</title><meta name="theme-color" content="#1F2A44"><meta name="description" content="EduProfe+ by EduPsi"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="EduProfe+"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-180.png"><style>:root{--bg:#F4F5F8;--surface:#fff;--surface-2:#F1F3F7;--line:#DDE2EA;--fg:#1B2333;--muted:#5D687A;--brand:#1F2A44;--brand-ink:#1F2A44;--brand-soft:#E8ECF4;--gold:#C8A658}
+<html lang="es"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-pZzdgsRXUfb2mqycP4BmIQ1kDtc88jFjETTAsdqysE8=' 'sha256-+PPF/F/3+HTNoi+KOZsVC1D5Cl8AhfI5k1Fy8zkcek8='; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' https://hwflddeqsnicgjjszjxr.supabase.co wss://hwflddeqsnicgjjszjxr.supabase.co; frame-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>EduProfe+</title><meta name="theme-color" content="#1F2A44"><meta name="description" content="EduProfe+ by EduPsi"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="EduProfe+"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-180.png"><style>:root{--bg:#F4F5F8;--surface:#fff;--surface-2:#F1F3F7;--line:#DDE2EA;--fg:#1B2333;--muted:#5D687A;--brand:#1F2A44;--brand-ink:#1F2A44;--brand-soft:#E8ECF4;--gold:#C8A658}
 :root[data-theme=dark]{--bg:#10141C;--surface:#171D28;--surface-2:#1E2633;--line:#2B3444;--fg:#E7EBF2;--muted:#98A3B5;--brand:#C8A658;--brand-ink:#F1DFAF;--brand-soft:#2A2A22}
 *{box-sizing:border-box}html,body{margin:0;height:100%}body{background:var(--bg);color:var(--fg);font-family:'Poppins',system-ui,-apple-system,Segoe UI,sans-serif;font-size:15px;line-height:1.5;-webkit-text-size-adjust:100%}
 @font-face{font-family:'Poppins';src:url(Poppins-Regular.ttf);font-weight:400}@font-face{font-family:'Poppins';src:url(Poppins-Bold.ttf);font-weight:700}
@@ -268,7 +268,7 @@ function docx54(T,mom,g,o){const M=IPEC_MOM[mom];const y=o.anio;const rowT=T[M.t
  const rows=(o.hab.length?o.hab:['']).map(h=>{const r=rowT.replace('{H}',xe54(h));return M.t==='diag'?r.replace('{EP}',h?'X':'').replace('{L}',''):r.replace('{V}',h?M.v:'')}).join('');
  const blocks=g.est.filter(s=>String(s).trim()).map((s,i)=>{let b=T[M.t].replace('{DOC}',xe54(o.docente)).replace('{ASIG}',xe54(o.asignatura)).replace('{NIVEL}',xe54(NIV54[g.nivel]||g.nivel))
    .replace('{PER}',xe54(M.per?M.per(y):'')).replace('{TIT}',xe54(M.tit(y))).replace('{EST}',xe54(String(s).trim())).replace('{SEC}',xe54(g.seccion)).replace('{COL}',xe54(M.col||''))
-   .replace('{ROWS}',rows).replace('{REC}',xe54(o.rec||'')).replace('{FIRMA}',xe54(o.docente));
+   .replace('{ROWS}',rows).replace('{REC}',xe54(typeof o.rec==='function'?o.rec(String(s).trim(),i):(o.rec||''))).replace('{FIRMA}',xe54(o.docente));
   if(i>0)b=b.replace(/<w:p\b([^>]*)>(<w:pPr>)?/,(m,a,pp)=>`<w:p${a}><w:pPr><w:pageBreakBefore/>`+(pp?'':'</w:pPr>'));return b});
  const doc=T.prefix+blocks.join('')+T.sect+'</w:body></w:document>';
  const ents=T.ent.slice();ents.splice(1,0,st54('word/document.xml',new TextEncoder().encode(doc)));return zip54(ents)}
@@ -370,8 +370,8 @@ function cfgv54(){const c=cfg54();return `<div class="card stack"><h2 style="mar
  <div class="field"><label for="ipc1">Persona docente</label><input id="ipc1" class="inp" data-ipcfg="docente" value="${esc(c.docente)}"></div>
  <div class="two"><div class="field"><label for="ipc2">Asignatura</label><input id="ipc2" class="inp" data-ipcfg="asignatura" value="${esc(c.asignatura)}"></div>
  <div class="field"><label for="ipc3">Año</label><input id="ipc3" class="inp" type="number" data-ipcfg="anio" value="${esc(c.anio)}"></div></div></div></div>
- <div class="card stack"><div><h2 style="margin:0;font-size:17px">Recomendaciones / Observaciones</h2><p class="small muted" style="margin:2px 0 0">Este texto sale en cada estudiante. Cámbialo cuando quieras.</p></div>
- ${Object.entries(IPEC_MOM).map(([k,m])=>`<div class="field"><label for="ipr_${k}">${m.lbl}</label><textarea id="ipr_${k}" class="inp" rows="3" data-ipcfg="rec.${k}" style="resize:vertical">${esc((c.rec||{})[k]||REC54[k])}</textarea></div>`).join('')}</div>`}
+ <div class="card stack"><div><h2 style="margin:0;font-size:17px">Recomendaciones / Observaciones</h2><p class="small muted" style="margin:2px 0 0">Si dejas el espacio vacío, la app redacta una recomendación distinta para cada estudiante (más de 3000 variaciones por documento). Si escribes tu propio texto, se usa ese mismo para todos.</p></div>
+ ${Object.entries(IPEC_MOM).map(([k,m])=>`<div class="field"><label for="ipr_${k}">${m.lbl}</label><textarea id="ipr_${k}" class="inp" rows="3" data-ipcfg="rec.${k}" style="resize:vertical" placeholder="Automático: una recomendación distinta para cada estudiante">${esc(((c.rec||{})[k]||'')===REC54[k]?'':((c.rec||{})[k]||''))}</textarea></div>`).join('')}</div>`}
 
 (function(){const st=document.createElement('style');st.textContent=`.ip-moms{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
 .ip-mom{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:10px 12px;cursor:pointer;font:inherit;color:var(--fg)}
@@ -525,6 +525,188 @@ ACT.as_open=d=>{AS.mat=d.m;AS.sec=d.s;AS.date=hoyAS();ACT.nav({v:'dia'})};
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&ui.menu){ui.menu=false;render()}});
 // al terminar de cargar la información, mostrarla en la página donde esté (no solo en la vieja sección «ipec»)
 const _ipLoadL=ipLoad;ipLoad=async function(){const was=IP.loading;await _ipLoadL();if(!was&&IP.rows&&ui.user)render()};
+
+// ===== EduProfe+ · banco de recomendaciones: la misma idea con distintas palabras =====
+// Cada recomendación = situación (según el documento) + sugerencia + cierre. 15 × 15 × 14 = 3150 combinaciones por documento.
+// Ningún estudiante de una misma sección repite texto y cada docente recibe un orden propio.
+const RB={
+ A:{
+  diag:['La persona estudiante se encuentra en proceso de consolidar los conocimientos previos evaluados.',
+   'Los resultados del diagnóstico muestran que la persona estudiante aún está afianzando los conocimientos previos del nivel.',
+   'En la evaluación diagnóstica, la persona estudiante evidencia que los aprendizajes previos están en proceso de consolidación.',
+   'La persona estudiante muestra avances en los conocimientos previos evaluados, aunque todavía requiere afianzarlos.',
+   'El diagnóstico refleja que la persona estudiante se encuentra fortaleciendo las bases necesarias para el nivel.',
+   'Según la evaluación diagnóstica, la persona estudiante está en proceso de dominar los contenidos previos evaluados.',
+   'La persona estudiante inicia el curso con conocimientos previos que aún se encuentran en proceso de consolidación.',
+   'En los contenidos previos evaluados, la persona estudiante presenta un desempeño en proceso.',
+   'La evaluación diagnóstica indica que la persona estudiante necesita continuar fortaleciendo los conocimientos previos.',
+   'Los conocimientos previos de la persona estudiante se encuentran en desarrollo, según lo observado en el diagnóstico.',
+   'La persona estudiante evidencia una base de conocimientos previos que todavía está en proceso de afianzarse.',
+   'A partir del diagnóstico, se observa que la persona estudiante continúa consolidando los aprendizajes de años anteriores.',
+   'La persona estudiante se encuentra en proceso con respecto a los conocimientos previos que se evaluaron.',
+   'En el diagnóstico inicial, la persona estudiante muestra que algunos conocimientos previos aún están en construcción.',
+   'La evaluación diagnóstica permite identificar que la persona estudiante está afianzando los conocimientos base del nivel.'],
+  ini:['Al inicio del curso lectivo, la persona estudiante se encuentra en proceso de adquirir las habilidades del nivel.',
+   'Al comenzar el año, la persona estudiante está en proceso de desarrollar las habilidades propias del nivel.',
+   'En el perfil de entrada, la persona estudiante muestra que las habilidades del nivel se encuentran en proceso.',
+   'La persona estudiante inicia el curso lectivo desarrollando las habilidades establecidas para el nivel.',
+   'Al iniciar el curso, las habilidades del nivel se encuentran en proceso de adquisición por parte de la persona estudiante.',
+   'En este primer momento del año, la persona estudiante está construyendo las habilidades del nivel.',
+   'La persona estudiante comienza el curso lectivo con las habilidades del nivel en proceso de desarrollo.',
+   'Al inicio del año, la persona estudiante se encuentra en proceso de lograr las habilidades del programa.',
+   'El perfil de entrada evidencia que la persona estudiante está en camino de adquirir las habilidades del nivel.',
+   'Al arrancar el curso lectivo, la persona estudiante se encuentra desarrollando las habilidades previstas.',
+   'En el inicio del curso, la persona estudiante presenta las habilidades del nivel en proceso.',
+   'La persona estudiante se encuentra, al comenzar el año, en proceso de alcanzar las habilidades del nivel.',
+   'En el perfil de entrada se observa que la persona estudiante está iniciando el desarrollo de las habilidades del nivel.',
+   'Al inicio del periodo lectivo, la persona estudiante se encuentra en proceso con las habilidades del nivel.',
+   'La persona estudiante empieza el curso en proceso de adquirir las habilidades correspondientes a su nivel.'],
+  s1:['Durante el I semestre, la persona estudiante continúa en proceso de desarrollar las habilidades evaluadas.',
+   'En el I semestre, la persona estudiante muestra avances y continúa desarrollando las habilidades evaluadas.',
+   'A lo largo del I semestre, la persona estudiante se mantiene en proceso de lograr las habilidades del nivel.',
+   'La persona estudiante avanzó durante el I semestre y sigue en proceso de consolidar las habilidades evaluadas.',
+   'En este primer semestre, las habilidades evaluadas se encuentran en proceso de desarrollo.',
+   'Durante el I semestre se observa que la persona estudiante continúa construyendo las habilidades evaluadas.',
+   'La persona estudiante concluye el I semestre con las habilidades evaluadas en proceso.',
+   'En el transcurso del I semestre, la persona estudiante ha mostrado progreso y continúa desarrollando las habilidades.',
+   'Al cierre del I semestre, la persona estudiante se encuentra en proceso de alcanzar las habilidades evaluadas.',
+   'Las habilidades trabajadas durante el I semestre se encuentran en proceso de consolidación por parte de la persona estudiante.',
+   'La persona estudiante sigue avanzando en las habilidades evaluadas durante el I semestre.',
+   'Durante este semestre, la persona estudiante ha trabajado las habilidades del nivel, que aún se encuentran en proceso.',
+   'En el I semestre, la persona estudiante evidencia esfuerzo y continúa en proceso de lograr las habilidades evaluadas.',
+   'A la fecha, la persona estudiante se encuentra en proceso con las habilidades evaluadas en el I semestre.',
+   'El desempeño de la persona estudiante en el I semestre muestra que las habilidades evaluadas están en desarrollo.'],
+  s2:['La persona estudiante logró las habilidades evaluadas durante el II semestre.',
+   'Durante el II semestre, la persona estudiante alcanzó las habilidades evaluadas.',
+   'La persona estudiante concluye el II semestre habiendo logrado las habilidades evaluadas.',
+   'En el II semestre, la persona estudiante demostró el logro de las habilidades trabajadas.',
+   'A lo largo del II semestre, la persona estudiante consolidó las habilidades evaluadas.',
+   'La persona estudiante alcanzó satisfactoriamente las habilidades evaluadas en este semestre.',
+   'Al cierre del II semestre, la persona estudiante evidencia el logro de las habilidades evaluadas.',
+   'Las habilidades evaluadas durante el II semestre fueron logradas por la persona estudiante.',
+   'La persona estudiante mostró un buen avance y logró las habilidades del II semestre.',
+   'En este semestre, la persona estudiante logró las habilidades que se evaluaron.',
+   'Durante el II semestre, la persona estudiante demostró dominio de las habilidades evaluadas.',
+   'La persona estudiante completó el II semestre con las habilidades evaluadas logradas.',
+   'El desempeño de la persona estudiante en el II semestre refleja el logro de las habilidades evaluadas.',
+   'Se observa que la persona estudiante alcanzó las habilidades trabajadas durante el II semestre.',
+   'La persona estudiante finaliza el semestre habiendo alcanzado las habilidades evaluadas.'],
+  sal:['Al finalizar el curso lectivo, la persona estudiante logró las habilidades del nivel.',
+   'Al concluir el año, la persona estudiante alcanzó las habilidades establecidas para el nivel.',
+   'En el perfil de salida, la persona estudiante evidencia el logro de las habilidades del nivel.',
+   'La persona estudiante cierra el curso lectivo habiendo logrado las habilidades del nivel.',
+   'Al término del curso, las habilidades del nivel fueron alcanzadas por la persona estudiante.',
+   'La persona estudiante finaliza el año con las habilidades del nivel logradas.',
+   'Al cierre del curso lectivo, la persona estudiante demuestra dominio de las habilidades del nivel.',
+   'El perfil de salida muestra que la persona estudiante alcanzó las habilidades previstas para el nivel.',
+   'La persona estudiante concluye el curso habiendo consolidado las habilidades del nivel.',
+   'Al finalizar el periodo lectivo, la persona estudiante logró las habilidades del programa.',
+   'La persona estudiante alcanzó, al cierre del año, las habilidades correspondientes a su nivel.',
+   'En este cierre de curso, la persona estudiante evidencia que logró las habilidades del nivel.',
+   'La persona estudiante termina el curso lectivo con un logro satisfactorio de las habilidades del nivel.',
+   'Al final del año, se observa que la persona estudiante logró las habilidades establecidas.',
+   'La persona estudiante completó el curso lectivo alcanzando las habilidades del nivel.']},
+ B:{
+  diag:['Se recomienda repasar estos contenidos mediante práctica guiada y resolución de ejercicios.',
+   'Se sugiere reforzar los contenidos previos con ejercicios cortos y frecuentes.',
+   'Es conveniente repasar los temas evaluados con apoyo de ejemplos y práctica guiada.',
+   'Se recomienda dedicar un tiempo diario al repaso de los contenidos previos.',
+   'Se sugiere practicar los contenidos evaluados mediante ejercicios graduados, de lo más sencillo a lo más complejo.',
+   'Es recomendable retomar los temas previos con práctica constante y acompañamiento.',
+   'Se recomienda reforzar las bases con ejercicios prácticos y material de apoyo.',
+   'Se sugiere repasar en casa los contenidos previos, resolviendo ejercicios similares a los trabajados en clase.',
+   'Es conveniente fortalecer los conocimientos previos con práctica guiada y revisión de errores.',
+   'Se recomienda trabajar los contenidos previos con actividades de repaso breves y constantes.',
+   'Se sugiere organizar momentos de repaso semanal de los temas evaluados.',
+   'Es recomendable practicar los contenidos previos utilizando ejemplos de la vida cotidiana.',
+   'Se recomienda repasar paso a paso los procedimientos que aún presentan dificultad.',
+   'Se sugiere reforzar los contenidos evaluados mediante resolución de ejercicios y práctica acompañada.',
+   'Es conveniente realizar práctica adicional de los contenidos previos con el apoyo de materiales concretos.'],
+  ep:['Se recomienda practicar de forma constante y cumplir con las tareas asignadas.',
+   'Se sugiere mantener el estudio diario y reforzar los contenidos con práctica adicional.',
+   'Es conveniente repasar en casa lo trabajado en clase y resolver ejercicios de práctica.',
+   'Se recomienda participar activamente en las lecciones y completar las actividades propuestas.',
+   'Se sugiere dedicar un tiempo fijo cada día al repaso de los contenidos del nivel.',
+   'Es recomendable reforzar los contenidos mediante práctica guiada y ejercicios graduados.',
+   'Se recomienda organizar el estudio en sesiones cortas y frecuentes.',
+   'Se sugiere repasar los procedimientos trabajados y practicar con ejercicios similares.',
+   'Es conveniente cumplir con los trabajos asignados y repasar los temas vistos en clase.',
+   'Se recomienda mantener una práctica constante para fortalecer las habilidades en proceso.',
+   'Se sugiere reforzar en casa los contenidos con ejercicios y material de apoyo.',
+   'Es recomendable revisar los errores en los ejercicios para aprender de ellos.',
+   'Se recomienda continuar practicando los contenidos con apoyo de ejemplos y material concreto.',
+   'Se sugiere mantener el orden en el cuaderno y repasar lo trabajado cada semana.',
+   'Es conveniente realizar práctica adicional en los contenidos que presentan mayor dificultad.'],
+  l:['Se recomienda continuar practicando y repasar los contenidos para fortalecer las bases del siguiente nivel.',
+   'Se sugiere mantener los hábitos de estudio para conservar los aprendizajes alcanzados.',
+   'Es conveniente repasar periódicamente los contenidos para no perder lo aprendido.',
+   'Se recomienda seguir practicando en casa para afianzar las habilidades logradas.',
+   'Se sugiere aprovechar las vacaciones para realizar repasos breves de los contenidos del año.',
+   'Es recomendable mantener la práctica constante para iniciar el próximo nivel con una buena base.',
+   'Se recomienda continuar con la disciplina de estudio mostrada durante el curso.',
+   'Se sugiere repasar los contenidos principales del nivel antes de iniciar el siguiente año.',
+   'Es conveniente conservar el hábito de practicar ejercicios de forma regular.',
+   'Se recomienda mantener el interés y el esfuerzo demostrados para seguir avanzando.',
+   'Se sugiere realizar actividades de repaso que permitan mantener lo aprendido.',
+   'Es recomendable seguir aplicando lo aprendido en situaciones de la vida cotidiana.',
+   'Se recomienda continuar fortaleciendo las habilidades logradas mediante práctica regular.',
+   'Se sugiere conservar las rutinas de estudio que favorecieron sus logros.',
+   'Es conveniente repasar los contenidos del año para facilitar la transición al siguiente nivel.']},
+ C:{
+  diag:['Además, es importante consultar sus dudas a la persona docente.',
+   'Se le invita a consultar oportunamente sus dudas durante las lecciones.',
+   'El acompañamiento de la familia en el repaso en casa será de gran apoyo.',
+   'Preguntar a la persona docente cuando algo no quede claro favorecerá su avance.',
+   'Con constancia y apoyo podrá fortalecer estas bases durante el curso.',
+   'Se le anima a participar en clase y a solicitar ayuda cuando la necesite.',
+   'El trabajo conjunto entre la familia y la institución favorecerá su progreso.',
+   'Se recomienda también mantener comunicación con la persona docente sobre su avance.',
+   'Con práctica y acompañamiento podrá alcanzar estos aprendizajes.',
+   'Es valioso que la familia dé seguimiento a las actividades de repaso.',
+   'Consultar sus dudas a tiempo le ayudará a avanzar con mayor seguridad.',
+   'Se le motiva a mantener una actitud positiva frente a los nuevos retos del curso.',
+   'El apoyo constante en casa contribuirá a consolidar estos conocimientos.',
+   'Se le anima a trabajar con paciencia y a reconocer cada avance logrado.'],
+  ep:['Además, es importante consultar oportunamente sus dudas a la persona docente.',
+   'El acompañamiento de la familia en las tareas será de gran apoyo para su avance.',
+   'Se le anima a participar en clase y a pedir ayuda cuando la necesite.',
+   'Con esfuerzo y constancia podrá seguir avanzando en el logro de las habilidades.',
+   'Mantener comunicación con la persona docente ayudará a dar seguimiento a su progreso.',
+   'Se le motiva a continuar con una actitud positiva y perseverante.',
+   'El trabajo conjunto entre la familia y la institución favorecerá su aprendizaje.',
+   'Consultar sus dudas a tiempo le permitirá avanzar con mayor seguridad.',
+   'Es valioso reconocer y celebrar cada avance que logre.',
+   'El seguimiento en casa de las tareas y repasos contribuirá a su progreso.',
+   'Se le invita a mantener el compromiso y la responsabilidad con sus estudios.',
+   'Con práctica y apoyo podrá alcanzar las habilidades propuestas.',
+   'Se le anima a confiar en sus capacidades y a seguir esforzándose.',
+   'La participación activa en las lecciones será clave para su avance.'],
+  l:['Se le felicita por el esfuerzo y la dedicación mostrados.',
+   'Se reconoce su compromiso y responsabilidad durante el periodo.',
+   'Felicidades por los logros alcanzados; se le anima a continuar así.',
+   'Se le motiva a mantener la actitud positiva que le permitió alcanzar estas metas.',
+   'Su esfuerzo constante se refleja en los resultados obtenidos.',
+   'Se le anima a seguir avanzando con la misma dedicación.',
+   'El apoyo de la familia ha sido valioso y es importante mantenerlo.',
+   'Se reconoce su perseverancia y se le anima a continuar con entusiasmo.',
+   'Se le felicita por su avance y se le motiva a asumir nuevos retos.',
+   'Sus logros son el resultado de su trabajo y constancia.',
+   'Se le anima a confiar en sus capacidades para el siguiente nivel.',
+   'Se valora su participación y responsabilidad a lo largo del periodo.',
+   'Mantener este ritmo de trabajo le permitirá seguir creciendo.',
+   'Se le felicita y se le desea muchos éxitos en la siguiente etapa.']}};
+const RB_KIND={diag:'diag',ini:'ep',s1:'ep',s2:'l',sal:'l'};
+function rbHash(s){let h=2166136261;for(const ch of String(s)){h^=ch.codePointAt(0);h=Math.imul(h,16777619)}return h>>>0}
+function rbGcd(a,b){while(b){[a,b]=[b,a%b]}return a}
+// texto para el estudiante i de la sección (todos distintos dentro de la sección; orden propio por docente)
+function recFor(mom,seccion,i,anio){const k=RB_KIND[mom]||'ep';const A=RB.A[mom]||RB.A.ini,B=RB.B[k],C=RB.C[k];const N=A.length*B.length*C.length;
+ const seed=rbHash([(ui.user&&ui.user.id)||'',mom,anio||'',seccion].join('|'));let p=Math.floor(N*0.6180339)+ (seed%97);while(rbGcd(p,N)!==1)p++;
+ const idx=(seed+i*p)%N;const a=idx%A.length,b=Math.floor(idx/A.length)%B.length,c=Math.floor(idx/(A.length*B.length))%C.length;
+ return `${A[a]} ${B[b]} ${C[c]}`}
+// al generar: si la docente no escribió su propio texto, cada estudiante recibe una recomendación distinta
+const _docx54rb=docx54;docx54=function(T,mom,g,o){const c=cfg54();const own=String(((c.rec||{})[mom])||'').trim();
+ if(own&&own!==REC54[mom])return _docx54rb(T,mom,g,o);
+ return _docx54rb(T,mom,g,Object.assign({},o,{rec:(name,i)=>recFor(mom,g.seccion,i,o.anio)}))};
 
 // ===== EduProfe+ · seguridad (igual que EduPsi Campus): verificación en dos pasos, Face ID / huella,
 // bloqueo por inactividad, recordar correo, respaldo, actividad y protección del navegador =====
